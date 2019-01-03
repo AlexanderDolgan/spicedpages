@@ -1,4 +1,4 @@
-# touche
+# spicedpages
 
 jquery
 jquery.scrollTo-2.1.2
