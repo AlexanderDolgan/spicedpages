@@ -1,0 +1,28 @@
+.services {
+	background-image: url(../img/pattern.png);
+	background-size: 5px;
+}
+
+.services .container {
+	& h2 {
+		color: ac(primary);
+	}
+	& .cards {
+		display: flex;
+		flex-flow: row wrap;
+		margin-top: 4rem;
+		& .card {
+			width: percentage(6/12);
+		}
+	}
+}
+
+@media (min-width: $b-medium) {
+	.services .container {
+		& .cards {
+			display: flex;
+			flex-flow: row nowrap;
+			margin-top: 8rem;
+		}
+	}
+}

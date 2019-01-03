@@ -1,0 +1,63 @@
+.feedback {
+	background-color: ac(primary);
+	overflow: hidden;
+}
+
+.feedback .container {
+	position: initial;
+	& h2 {
+		color: ac(third);
+	}
+	& p {
+		color: ac(white);
+		margin-top: 2rem;
+	}
+	& button {
+		margin-top: 4rem;
+	}
+	& img {
+		width: 80%;
+		display: block;
+		margin: 0 auto;
+		margin-top: 2rem;
+	}
+}
+
+@media (min-width: $b-large) {
+	.feedback {
+		min-height: 100rem;
+		position: relative;
+	}
+
+	.feedback .container {
+		margin-top: 10rem;
+		& h2 {
+			max-width: 60rem;
+		}
+		& p {
+			max-width: 60rem;
+		}
+		& img {
+			position: absolute;
+			bottom: 0;
+			right: -12%;
+			width: auto;
+		}
+	}
+}
+
+@media (min-width: $b-xlarge) {
+	.feedback .container {
+		& img {
+			right: 0%;
+		}
+	}
+}
+
+@media (min-width: $b-xxlarge) {
+	.feedback .container {
+		& img {
+			right: 8%;
+		}
+	}
+}

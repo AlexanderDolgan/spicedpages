@@ -1,0 +1,140 @@
+include partials/head
+body
+	.loader
+		.preloader
+			.lines
+				.line.line-1
+				.line.line-2
+				.line.line-3
+			.loading-text загрузка
+	#site-wrapper
+		header.site-hedaer
+			#top(data-aos="fade-down")
+				.logo
+					img(src="../img/brand/logo-text.svg", alt="spicedpages logo")
+				.nav-show-btn Navigation <i></i>
+				nav.active-nav
+					ul
+						li
+							a(href="#") Services
+						li
+							a(href="#") Portfolio
+						li
+							a(href="#") Prices
+						li
+							a(href="#") Contacts
+		section.hero
+			.container(data-aos="fade-up" data-aos-duration="1500")
+				.headers
+					h1 Website development
+					h3 Branding / Development / Promotion
+					//- button.btn See more
+			.container-fw(data-aos="fade-up" data-aos-duration="2000")
+				.img
+					img(src="../img/develop.svg", alt="website develop")
+		
+		section.services
+			.container
+				h2(data-aos="fade-up") Services
+				.cards
+					.card(data-aos="fade-up")
+						img(src="img/branding@2x.png", alt="branding icon")
+						h3 Branding
+						ul
+							li Logo Design
+							li Copywriting
+					.card(data-aos="fade-up")
+						img(src="img/code.png", alt="development icon")
+						h3 Development
+						ul
+							li Assessment
+							li Design
+							li Construction
+					.card(data-aos="fade-up")
+						img(src="img/maintain@2x.png", alt="maintaince icon")
+						h3 Maintenance
+						ul
+							li Updates
+							li Posting
+							li Training
+					.card(data-aos="fade-up")
+						img(src="img/promotion@2x.png", alt="promotion icon")
+						h3 Promotion
+						ul
+							li Social Media
+							li Google / Yandex
+							li SEO
+
+		section.feedback
+			.container
+				h2(data-aos="fade-up") Methods and approach for your site
+				p(data-aos="fade-up").
+					Integrated with tools and certificates to protect your site from intruders and reassure your visitors
+				button.btn Send request
+				img(src="../img/meetup.svg", alt="feedback develop" data-aos="fade-up" data-aos-duration="2000")
+
+		section.advantages
+			.container
+				h2 We build websites
+				.cards
+					.card(data-aos="fade-up")
+						img(src="img/secure@2x.png", alt="secure icon")
+						h3 Safe and Secure
+						p.
+							Integrated with tools and certificates to protect your site from intruders and reassure your visitors
+					.card(data-aos="fade-up")
+						img(src="img/structure.png", alt="structure icon")
+						h3 Structurally Sound
+						p.
+							Built using the best WordPress themes and plugins and optimized to load pages fast
+					.card(data-aos="fade-up")
+						img(src="img/devices@2x.png", alt="devices icon")
+						h3 Accessible in Devices
+						p.
+							Built to look great on any type of device from phone to wide screen television
+					.card(data-aos="fade-up")
+						img(src="img/social@2x.png", alt="social icon")
+						h3 Well Connected
+						p.
+							Plugged into social media, search engine analytics and  everything Google
+
+		section.portfolio
+			.container
+				h2 Portfolio
+				.folio-cards
+					a(href="#" data-aos="fade-up").folio-card
+						.img
+							img(src="img/gallery/folio-1.jpg", alt="folio img")
+					a(href="#" data-aos="fade-up").folio-card
+						.img
+							img(src="img/gallery/folio-2.jpg", alt="folio img")
+					a(href="#" data-aos="fade-up").folio-card
+						.img
+							img(src="img/gallery/folio-3.jpg", alt="folio img")
+		section.prices
+			.container
+				h2(data-aos="fade-up") Prices
+				.prices-cards
+					.price-card(data-aos="fade-up")
+						img(src="img/startup.png", alt="Startup icon")
+						h3 Startup
+						p Basic / Landing page
+						p.price 300$
+						button.btn Send request
+
+					.price-card(data-aos="fade-up")
+						img(src="img/store.png", alt="e-commerce icon")
+						h3 E-commerce
+						p Online store
+						p.price 900$
+						button.btn Send request
+
+					.price-card(data-aos="fade-up")
+						img(src="img/commercial.png", alt="e-commerce icon")
+						h3 Commercial
+						p Corporate website
+						p.price 1200$
+						button.btn Send request
+							
+		section#site-footer
+			include partials/site-footer

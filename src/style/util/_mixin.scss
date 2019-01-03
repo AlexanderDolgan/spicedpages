@@ -1,0 +1,34 @@
+//clearfix
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+//wrapper mixin
+//$pad-vert-small - top and bottom paddings on small screens
+//$pad-vert - top and bottom paddings on large screens
+//$max-width - wrapper max width
+//$bg-color - wrapper background color
+@mixin wrapper ($pad-vert:8rem, $pad-vert-large:16rem, $bg-color: none) {
+	position: relative;
+	width: 100%;
+	padding: $pad-vert 0;
+	background-color: $bg-color;
+	@media (min-width: $b-large) {
+		padding: $pad-vert-large 0;
+	}
+	// @include clearfix;
+}
+
+//bg img responsive
+@mixin bg-image($padding-top: 100%) {
+	padding-top: $padding-top;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-size: 0;
+	display: block;
+}

@@ -1,0 +1,33 @@
+.prices {
+	background-color: ac(primary);
+}
+
+.prices .container {
+	& h2 {
+		color: ac(third);
+	}
+	& .prices-cards {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		margin-top: 4rem;
+	}
+}
+
+@media (min-width: $b-medium) {
+	.prices .container {
+		& .prices-cards {
+			margin-top: 4rem;
+			flex-flow: row nowrap;
+			justify-content: space-between;
+		}
+	}
+}
+
+@media (min-width: $b-large) {
+	.prices .container {
+		& .prices-cards {
+			margin-top: 8rem;
+		}
+	}
+}

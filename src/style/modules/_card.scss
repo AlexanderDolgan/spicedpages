@@ -1,0 +1,16 @@
+.card {
+	padding: 4rem 0;
+	padding-right: 4rem;
+	& img {
+		width: 6rem;
+	}
+	& h3 {
+		margin-top: 2rem;
+	}
+	& ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		margin-top: 2rem;
+	}
+}

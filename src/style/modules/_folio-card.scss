@@ -1,0 +1,12 @@
+.folio-card {
+	display: block;
+	padding: 2rem;
+	& .img {
+		overflow: hidden;
+		max-height: 75rem;
+		font-size: 0;
+		& img {
+			width: 100%;
+		}
+	}
+}

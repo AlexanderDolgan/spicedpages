@@ -1,0 +1,107 @@
+.hero {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	// background: linear-gradient(to bottom, rgba(60,92,176,1) 0%,rgba(53,39,113,1) 100%);
+	background-color: ac(primary);
+	overflow: hidden;
+}
+
+.hero .container {
+	padding-top: 4rem;
+	& .headers {
+		& h1 {
+			color: ac(third);
+			text-transform: uppercase;
+		}
+		& button {
+			margin-top: 4rem;
+		}
+	}
+}
+
+.hero .container-fw {
+	margin-top: 4rem;
+	& .img {
+		text-align: center;
+		overflow: hidden;
+		& img {
+			width: 120%;
+		}
+	}
+}
+
+.hero .container {
+	& .headers {
+		& h1 {
+			line-height: 1.35;
+		}
+		& h3 {
+			margin-top: 2rem;
+			font-size: 2rem;
+			color: ac(white);
+		}
+	}
+}
+
+@media (min-width: $b-medium) {
+	.hero {
+		max-height: 120rem;
+	}
+	.hero .container {
+		& .headers {
+			max-width: 60rem;
+			& h3 {
+				font-size: 2.5rem;
+			}
+		}
+	}
+}
+
+@media (min-width: $b-large) {
+	.hero .container {
+		height: 100%;
+		padding-top: 0;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: center;
+	}
+
+	.hero .container-fw {
+		position: absolute;
+		bottom: 0;
+		right: -30%;
+		& .img {
+			& img {
+				width: 100%;
+			}
+		}
+	}
+}
+
+@media (min-width: $b-xlarge) {
+	.hero .container-fw {
+		right: -15%;
+		bottom: 10%;
+		& .img {
+			& img {
+				width: 100%;
+			}
+		}
+	}
+}
+
+@media (min-width: $b-xxlarge) {
+	.hero {
+		max-height: unset;
+	}
+	.hero .container-fw {
+		right: 0;
+		& .img {
+			& img {
+				width: 130%;
+				padding-right: 20rem;
+			}
+		}
+	}
+}

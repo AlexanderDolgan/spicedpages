@@ -1,0 +1,42 @@
+.btn {
+	font-size: 1.75rem;
+	font-weight: bold;
+	padding: 1.5rem 2rem;
+	background-color: ac(third);
+	color: ac(primary);
+	border: none;
+	box-shadow: 0 0 1rem rgba(0,0,0,.1);
+	transition: box-shadow .33s ease-in-out,
+	background-color .1s ease-in-out;
+
+}
+
+.btn:hover,
+.btn:focus {
+	box-shadow: 0 1.5rem 3rem rgba(0,0,0,.45);
+	background-color: ac(third, tint);
+}
+
+.btn:active {
+	background-color: ac(third, shade);
+}
+
+.btn-ghost {
+	background-color: transparent;
+	border: .2rem solid ac(primary);
+	color: ac(text);
+	padding: 1rem 1.5rem;
+	
+}
+
+.btn-ghost:hover,
+.btn-ghost:focus {
+	box-shadow: 0 1rem 2rem rgba(0,0,0,.15);
+	color: ac(text);
+	text-decoration: none;
+}
+
+.btn-ghost:active {
+	background-color: ac(lightgray, tint);
+	color: ac(text);
+}

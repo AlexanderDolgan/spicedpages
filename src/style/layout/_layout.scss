@@ -1,0 +1,36 @@
+#site-wrapper {
+	position: relative;
+}
+
+.container {
+	position: relative;
+	max-width: $container;
+	margin: 0 auto;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	@media (min-width: $b-large) {
+		padding-left: 4rem;
+		padding-right: 4rem;
+	}
+}
+
+.container-fw {
+	position: relative;
+	max-width: $container;
+	margin: 0 auto;
+	padding-left: 0rem;
+	padding-right: 0rem;
+}
+
+section {
+	@include wrapper();
+}
+
+.site-hedaer{
+	position: sticky;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 9;
+	background-color: ac(primary);
+}

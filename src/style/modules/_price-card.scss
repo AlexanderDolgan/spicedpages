@@ -1,0 +1,49 @@
+.price-card {
+	background-color: ac(white);
+	width: 38rem;
+	padding: 4rem 0;
+	text-align: center;
+	margin-top: 4rem;
+	margin-right: 1rem;
+	&:last-child {
+		margin-right: 0;
+	}
+	& img {
+		width: 18rem;
+	}
+	& h3 {
+		font-size: 3.5rem;
+		font-weight: normal;
+	}
+	& .price {
+		color: ac(primary);
+		font-size: 3.5rem;
+	}
+	& button {
+		margin-top: 4rem;
+	}
+}
+
+@media (min-width: $b-large) {
+	.price-card {
+		margin-top: 0;
+		width: 38rem;
+		padding: 8rem 0;
+		box-shadow: 0 0 2rem rgba(0,0,0,.2);
+		text-align: center;
+		& img {
+			width: 18rem;
+		}
+		& h3 {
+			font-size: 3.5rem;
+			font-weight: normal;
+		}
+		& .price {
+			color: ac(primary);
+			font-size: 3.5rem;
+		}
+		& button {
+			margin-top: 4rem;
+		}
+	}
+}

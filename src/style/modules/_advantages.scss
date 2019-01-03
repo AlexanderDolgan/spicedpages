@@ -1,0 +1,26 @@
+.advantages {
+	background-image: url(../img/pattern.png);
+	background-size: 5px;
+}
+
+.advantages .container {
+	& h2 {
+		color: ac(primary);
+	}
+	& .cards {
+		margin-top: 4rem;
+	}
+}
+
+@media (min-width: $b-medium) {
+	.advantages .container {
+		& .cards {
+			display: flex;
+			flex-flow: row wrap;
+			margin-top: 8rem;
+			& .card {
+				max-width: percentage(6/12);
+			}
+		}
+	}
+}

@@ -1,0 +1,50 @@
+{
+  "name": "touche",
+  "version": "1.0.0",
+  "description": "web site touche",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexanderDolgan/touche.git"
+  },
+  "keywords": [
+    "touche"
+  ],
+  "author": "Alexander Dolgan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexanderDolgan/touche/issues"
+  },
+  "homepage": "https://github.com/AlexanderDolgan/touche#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-cache": "^1.0.2",
+    "gulp-clean-css": "^3.10.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-filter": "^5.1.0",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-pug": "^3.3.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sass": "3.2.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.1",
+    "gulp-util": "^3.0.7",
+    "gulp-watch": "^5.0.1",
+    "gulp.spritesmith": "^6.9.0",
+    "imagemin-gifsicle": "^6.0.1",
+    "imagemin-pngquant": "^5.1.0",
+    "rimraf": "^2.6.2"
+  },
+  "dependencies": {
+    "imagemin-jpegtran": "^6.0.0",
+    "imagemin-optipng": "^6.0.0",
+    "rigger": "^1.0.0"
+  }
+}

@@ -1,0 +1,32 @@
+.portfolio {
+	background-color: ac(primary);
+	&::after {
+		content: '';
+		display: block;
+		position: absolute;
+		width: 100%;
+		height: 30rem;
+		left: 0;
+		bottom: 0;
+		background-color:ac(white);
+		background-image: url(../img/pattern-2.png);
+	}
+}
+
+.portfolio .container {
+	z-index: 1;
+	& h2 {
+		color: ac(third);
+	}
+	& .folio-cards {
+		margin-top: 4rem;
+	}
+}
+
+@media (min-width: $b-large) {
+	.portfolio .container {
+		& .folio-cards {
+			margin-top: 8rem;
+		}
+	}
+}
